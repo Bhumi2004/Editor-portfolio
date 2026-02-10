@@ -1,4 +1,4 @@
-import { Instagram, Youtube, HardDrive, Heart, Mail } from "lucide-react";
+import { Instagram, Youtube, HardDrive, Heart, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,10 +19,22 @@ export function Footer() {
 
           <div className="flex items-center gap-6">
             {[
-              { icon: Instagram, href: "#", label: "Instagram" },
-              { icon: Youtube, href: "#", label: "YouTube" },
-              { icon: HardDrive, href: "#", label: "Drive Portfolio" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+             
+              {
+    icon: Youtube,
+    href: "https://www.youtube.com/@BhumiJain-08",
+    label: "YouTube",
+  },
+  {
+    icon: Mail,
+    href: "mailto:bhumijain127@gmail.com",
+    label: "Email",
+  },
+  {
+    icon: Phone,
+    href: "tel:+916376930806",
+    label: "Phone",
+  },
             ].map((social) => (
               <a
                 key={social.label}

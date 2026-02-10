@@ -19,11 +19,22 @@ export function ContactSection() {
     }
   });
 
-  const onSubmit = (data: InsertMessage) => {
-    mutate(data, {
-      onSuccess: () => form.reset()
+ const onSubmit = async (data: InsertMessage) => {
+  try {
+    const res = await fetch("https://formspree.io/f/maqdqqap", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
-  };
+
+    if (!res.ok) throw new Error("Failed");
+
+    form.reset();
+    alert("Message sent successfully 🚀");
+  } catch (err) {
+    alert("Something went wrong ❌");
+  }
+};
 
   return (
     <Section id="contact" className="bg-gradient-to-b from-black to-primary/5">

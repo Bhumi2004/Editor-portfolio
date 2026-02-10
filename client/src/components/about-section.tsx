@@ -11,7 +11,7 @@ export function AboutSection() {
           <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
             {/* abstract creative workspace setup */}
             <img 
-              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" 
+              src="/videos/me.jpeg" 
               alt="Workspace" 
               className="w-full aspect-[4/5] object-cover"
             />
