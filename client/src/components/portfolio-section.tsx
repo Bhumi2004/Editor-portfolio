@@ -28,19 +28,19 @@ export function PortfolioSection() {
           },
           {
             id: 2,
-            title: "Model Edit ",
+            title: "Bride Edit",
             category: "Model",
              videoUrl: "/videos/Model.mp4",
            thumbnail: "/videos/soft-girl.jpg",
-            description: "Model Edit with clean sound and transitions.",
+            description: "Bride Edit with colour grading and transitions.",
           },
           {
             id: 3,
-            title: "Personal Edit",
+            title: "Coco Cola Edit",
             category: "Creative",
               videoUrl: "/videos/My edit.mp4",
            thumbnail: "/videos/soft-girl.jpg",
-            description: "Cut-out Transition with effects and sync up with beats.",
+            description: "Coke edit with motion grphaics and sync up with beats.",
           },
           {
             id: 4,
