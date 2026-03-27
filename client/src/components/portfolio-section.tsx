@@ -21,8 +21,8 @@ export function PortfolioSection() {
             id: 1,
             title: "Brand Promo Reel",
             category: "Brand",
-            videoUrl: "/videos/YSL-Heels.mp4",
-            thumbnail: "/videos/YSL.jpg",
+            videoUrl: "/videos/Hello.mp4",
+            thumbnail: "/videos/eTyHs.jpg",
             description:
               "Brand-focused reel with smooth transitions and color grading.",
           },
