@@ -3,22 +3,28 @@ import { Briefcase, Instagram, Video, Youtube } from "lucide-react";
 
 export function ExperienceSection() {
   const experiences = [
-    {
-      role: "Freelance Video Editor",
-      company: "Self-Employed",
-      period: "2025 - Present",
-description: "Creating high-quality video edits for personal projects, YouTube content, and creative experiments. Exploring full post-production workflow including editing, transitions, and color grading.",
-      icon: Briefcase
-    },
-    {
-      role: "Content Creator",
-      company: "Social Media",
-      period: "2025 - Present",
-      description: "Producing and editing engaging reels and shorts for personal brand growth. Mastering viral trends and retention strategies.",
-      icon: Youtube
-    },
-   
-  ];
+  {
+    role: "Video Editor & Graphic Designer",
+    company: "ORU",
+    period: "May 2026 - Present",
+    description: "Creating premium visual content for luxury villas, including social media creatives, branding materials, reels, motion graphics, and branding assets using Adobe Creative Suite.",
+    icon: Briefcase
+  },
+  {
+    role: "Video Editing Intern",
+    company: "Truvixo",
+    period: "Mar 2026 - Apr 2026",
+    description: "Completed a one-month remote internship, assisting in video editing, post-production, and social media content while collaborating with the creative team.",
+    icon: Briefcase
+  },
+  {
+    role: "Freelance Video Editor",
+    company: "Remote",
+    period: "Oct 2025 - Mar 2026",
+    description: "Worked with remote clients to edit engaging videos, delivering polished content with smooth transitions, color correction, and motion graphics.",
+    icon: Briefcase
+  }
+];
 
   return (
     <Section id="experience">
