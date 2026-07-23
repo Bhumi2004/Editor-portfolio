@@ -3,12 +3,52 @@ import { motion } from "framer-motion";
 import { Scissors, Palette, Layout, PenTool, Video, Aperture } from "lucide-react";
 
 const skills = [
-  { name: "CapCut", icon: Scissors, description: "Advanced mobile editing & effects" },
-  { name: "Canva", icon: Layout, description: "Graphic design & thumbnails" },
-  { name: "Figma", icon: PenTool, description: "UI design & visual planning" },
-  { name: "Motion Graphics", icon: Video, description: "Keyframing & transitions" },
-  { name: "Color Grading", icon: Palette, description: "Correction & stylization" },
-  { name: "Premiere Pro", icon: Aperture, description: "Professional timeline editing" },
+   {
+    name: "CapCut",
+    icon: Scissors,
+    description: "Short-form video editing & effects"
+  },
+  {
+    name: "Adobe After Effects",
+    icon: Video,
+    description: "Beginner in motion graphics & animation"
+  },
+  {
+    name: "Adobe Photoshop",
+    icon: Image,
+    description: "Basic Photo editing & creative design"
+  },
+ 
+  {
+    name: "Canva",
+    icon: Layout,
+    description: "Social media graphics & branding"
+  },
+  {
+    name: "Figma",
+    icon: PenTool,
+    description: "UI/UX design & wireframing"
+  },
+  {
+    name: "UI/UX Design",
+    icon: Monitor,
+    description: "User-centered interface design"
+  },
+  {
+    name: "Web Development",
+    icon: Code,
+    description: "React, JavaScript, HTML, CSS & Node.js"
+  },
+  {
+    name: "Motion Graphics",
+    icon: Sparkles,
+  description: "Bringing still visuals to life with realistic motion"
+  },
+  {
+    name: "Color Grading",
+    icon: Palette,
+    description: "Cinematic color correction"
+  }
 ];
 
 export function SkillsSection() {
