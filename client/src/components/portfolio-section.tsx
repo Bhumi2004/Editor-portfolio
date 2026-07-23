@@ -162,21 +162,18 @@ const projectCategories = [
                 <div className="aspect-video relative overflow-hidden">
                   {project.videoUrl ? (
                     <>
-                      <video
-                        ref={(el) => {
-                          if (el) videoRefs.current[project.id] = el;
-
-                          if (el) {
-                            el.onplay = () =>
-                              setPlayingVideoId(project.id);
-                            el.onpause = () =>
-                              setPlayingVideoId(null);
-                          }
-                        }}
-                        src={project.videoUrl}
-                        muted={mutedVideos[project.id] ?? false}
-                        className="w-full h-full object-contain bg-black"
-                      />
+                     <video
+                        poster={project.imageUrl}
+  ref={(el) => {
+    if (el) videoRefs.current[project.id] = el;
+  }}
+  src={project.videoUrl}
+  poster={project.imageUrl}
+  muted={mutedVideos[project.id] ?? true}
+  playsInline
+  preload="metadata"
+  className="w-full h-full object-cover bg-black"
+/>
 
                       {/* Play / Pause */}
                       <div
@@ -215,12 +212,13 @@ const projectCategories = [
                       </div>
 
                       {/* Mute Button */}
-                      <div
-                        className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 flex items-center justify-center cursor-pointer"
-                        onClick={() =>
-                          handleMuteToggle(project.id)
-                        }
-                      >
+                     <div
+ className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/50 flex items-center justify-center cursor-pointer"
+ onClick={(e)=>{
+   e.stopPropagation();
+   handleMuteToggle(project.id);
+ }}
+>
                         {mutedVideos[project.id] ? (
                           <VolumeX className="w-5 h-5 text-white" />
                         ) : (
@@ -232,7 +230,7 @@ const projectCategories = [
                     <img
                       src={project.imageUrl}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                       className="w-full h-full object-contain bg-black transition-transform duration-700 group-hover:scale-105"
                     />
                   )}
 
