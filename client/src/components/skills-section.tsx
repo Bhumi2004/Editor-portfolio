@@ -1,6 +1,16 @@
 import { Section } from "@/components/ui/section";
 import { motion } from "framer-motion";
-import { Scissors, Palette, Layout, PenTool, Video, Aperture } from "lucide-react";
+import {
+  Scissors,
+  Palette,
+  Layout,
+  PenTool,
+  Video,
+  Image,
+  Monitor,
+  Code,
+  Sparkles,
+} from "lucide-react";
 
 const skills = [
    {
