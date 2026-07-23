@@ -20,19 +20,20 @@ const projectCategories = [
       {
         id: 1,
   title: "Map Design",
-  imageUrl: "https://drive.google.com/uc?export=view&id=1gR9fNbXJ6dTCZSusB6cvYtVb8lkhakWv",
+  imageUrl: "/videos/design_1.png",
   description: "Creative Map poster."
       },
-     {
+    {
   id: 2,
-  title: "Brand Identity",
-  imageUrl: "https://drive.google.com/uc?export=view&id=1LMQqNJDlpzdbeYK6znwmrR0c_Mum0tls",
-  description: "Brand identity design with creative visual elements."
+  title: "Motion Graphic designing",
+  imageUrl: "/videos/design_3.png", // cover/thumbnail
+  videoUrl: "/videos/gdesign_3.mp4",
+  description: "Design with creative visual elements."
 },
       {
       id: 3,
   title: "Celebrity Poster",
-  imageUrl: "https://drive.google.com/uc?export=view&id=1viKx1Q_OmgQTeu_RG--p1KdFrSltLen6",
+  imageUrl: "/videos/design_2.png",
   description: "Celebrity poster design with creative typography and visual composition."
       },
     ],
